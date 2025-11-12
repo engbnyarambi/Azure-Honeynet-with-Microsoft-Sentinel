@@ -5,7 +5,7 @@ This project demonstrates how to architect and deploy a mini honeynet in Microso
 
 
 
-## 🔧 Architecture Summary
+## Architecture Summary
 The honeynet is built using core Azure components and designed to simulate vulnerable infrastructure while enabling full visibility through centralized logging and analytics.
 
 ### Key Components:
@@ -38,7 +38,7 @@ The honeynet is built using core Azure components and designed to simulate vulne
 | SecurityIncident             | 0     |
 | Malicious NSG Flows          | 0     |
 
-## 📈 KQL Queries (Microsoft Sentinel)
+## KQL Queries (Microsoft Sentinel)
 ```kql
 // Security Events (Windows)
 SecurityEvent
@@ -68,17 +68,17 @@ AzureNetworkAnalytics_CL
 | count
 ```
 
-## 🎯 Goals
+## Goals
 - Simulate real-world attack surface in Azure
 - Ingest and analyze telemetry using Microsoft Sentinel
 - Measure impact of hardening controls on threat visibility
 - Provide a reproducible blueprint for SOC teams and security researchers
 
-## 📹 Demo
+## Demo
 Watch the full walkthrough on YouTube:  
 **[How to Build a SOC + Honeynet in Azure](https://www.youtube.com/watch?v=your-video-link)**
 
-## 🚀 Getting Started
+## Getting Started
 To replicate this setup:
 1. Deploy VMs and NSGs via Azure Portal or ARM templates
 2. Connect resources to a Log Analytics Workspace
@@ -86,13 +86,13 @@ To replicate this setup:
 4. Apply KQL rules from `Sentinel-Analytics-Rules(KQL Alert Queries).json`
 5. Monitor incidents and metrics over time
 
-## 📁 Repository Contents
+## Repository Contents
 - `Sentinel-Analytics-Rules(KQL Alert Queries).json` – Alert logic
 - `*.json` – Sample telemetry from failed auth attempts
 - `geoip-summarized.csv` – Summarized geolocation data
 - `Xpath.txt` – Sample XPath extraction logic
 
-## 🧠 Lessons Learned
+## Lessons Learned
 - Even minimal exposure attracts automated scanning and brute-force attempts
 - Sentinel provides powerful visibility with minimal configuration
 - Hardening controls drastically reduce noise and attack surface
