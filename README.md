@@ -14,7 +14,7 @@ The honeynet is built using core Azure components and designed to simulate vulne
 - **Virtual Machines** (2 Windows, 1 Linux) exposed to the internet
 - **Log Analytics Workspace** for centralized log ingestion
 - **Azure Key Vault** and **Storage Account** for sensitive asset simulation
-- **Microsoft Sentinel (SIEM)** for threat detection, alerting, and incident response
+- **Microsoft Sentinel (SIEM + SOAR)** for threat detection, alerting, and incident response
 
 ![Cloud Honeynet + SOC Architecture](path-to-your-diagram.png)
 
@@ -97,5 +97,5 @@ To replicate this setup:
 - Sentinel provides powerful visibility with minimal configuration
 - Hardening controls drastically reduce noise and attack surface
 
-## 🏷️ Tags
+## Tags
 `azure` `sentinel` `honeynet` `soc` `kql` `security-monitoring` `cloud-security` `siem`
